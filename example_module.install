@@ -1,0 +1,63 @@
+<?php 
+
+/**
+* Implements hook_schema().
+ */
+
+function example_module_schema() {
+
+    $schema['example_users'] = array(
+       'description' => 'The base table for the sample user registry',
+         'fields' => array(
+             'register_id' => array(
+                'description' => 'Register ID',
+                'type' => 'serial',
+                'unsigned' => TRUE,
+                'not null' => TRUE,
+         ),
+
+         'name' => array(
+            'description' => 'Full name of the user',
+            'type' => 'varchar',
+            'length' => 400,
+            'not null' => TRUE,
+            'default' => '',
+          ),
+         
+         'identification' => array(
+           'description' => 'Identification of the user',
+           'type' => 'int',
+           'size' => 'big',
+           'not null' => TRUE,
+            'default' => 0,
+         ),
+
+         'date' => array(
+            'description' => 'user birthday',
+            'type' => 'varchar',
+            'mysql_type' => 'date',
+            'not null' => FALSE,
+          ),
+
+         'charge' => array(
+            'description' => 'Role name',
+            'type' => 'varchar',
+            'length' => 400,
+            'not null' => TRUE,
+            'default' => '',
+         ),
+         'status' => array(
+            'description' => 'User status according to their position',
+            'type' => 'int',
+            'not null' => TRUE,
+             'default' => 0,
+          ),
+ 
+     ),
+     'primary key' => array('register_id'),
+   );
+ 
+
+   return $schema;
+
+ }
