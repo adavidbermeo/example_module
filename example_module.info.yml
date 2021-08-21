@@ -1,0 +1,6 @@
+name: Example Module
+description: Sample module for registering employees of a software company
+package: Custom
+type: module
+version: 1.0
+core: 8.x

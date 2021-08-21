@@ -1,0 +1,22 @@
+{# Users table template #}
+<div class="container">
+  <div class="row th-main">
+    <div class="col-sm"> Register ID  </div><br>
+    <div class="col-sm"> Name  </div><br>
+    <div class="col-sm"> Identification </div></a> <br>
+    <div class="col-sm"> Date </div></a> <br>
+    <div class="col-sm"> Charge </div></a> <br>
+    <div class="col-sm"> Status </div></a> <br>
+  </div>
+  {% for key,value in users_data.register_id %}
+  {# {{ kint(test_var) }} #}
+  <div class="row table-body">
+    <div class="col-sm"> {{ users_data.register_id[key] }} </div>
+    <div class="col-sm"> {{ users_data.name[key] }} </div>
+    <div class="col-sm"> {{ users_data.identification[key] }} </div>
+    <div class="col-sm"> {{ users_data.date[key] }} </div>
+    <div class="col-sm"> {{ users_data.charge[key] }} </div>   
+    <div class="col-sm"> {{ users_data.status[key] }} </div>
+  </div>
+  {% endfor %} 
+</div>

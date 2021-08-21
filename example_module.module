@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function example_module_theme($existing, $type, $theme, $path) {
+  return [
+    'register_template' => [
+      'variables' => ['register_form' => NULL],
+    ],
+    'users_table_template' =>  [
+        'variables' => [  
+          'users_data' => NULL
+        ],
+      ],
+  ];
+}

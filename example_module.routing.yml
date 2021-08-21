@@ -1,0 +1,15 @@
+example_module.first_page:
+  path: '/example-module/form'
+  defaults:
+    _controller: '\Drupal\example_module\Controller\RegisterController::addNewUser'
+    _title: 'Grupo Link | Registration form'
+  requirements:
+    _permission: 'access content'
+
+example_module.second_page:
+  path: '/example-module/users-table'
+  defaults:
+    _controller: '\Drupal\example_module\Controller\UsersTableController::content'
+    _title: 'Registered users table'
+  requirements:
+    _access: 'TRUE'

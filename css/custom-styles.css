@@ -1,0 +1,37 @@
+.th-main{
+    background: #ccc;
+    padding: 22px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.table-body .col-sm{
+    padding: 18px;
+}
+
+.margin-link{
+    margin-right: 11%;
+}
+
+#my_form_wrapper{
+    text-align: left;
+    padding: 20px;
+}
+
+.title-home{
+    font-size: 36px;
+}
+
+.form-item-name, .form-item-identification, .form-item-date, .form-item-roles {
+    width: 50%;
+    float:left;
+}
+
+.register-button{
+    margin: 3% 0% 15px auto;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+
